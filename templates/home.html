@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Главная страница
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>Главная страница</h1>
+        {%if user.is_authenticated%}
+        <p>Имя: {{user.username}}</p>
+        <br>
+        <p><a href="{% url 'exit' %}">Выйти</a></p>
+        {% else %}
+        
+        <p><a href="{% url 'auth' %}">Войти</a></p>
+        <p><a href="{% url 'register' %}">Зарегестрироваться</a></p>
+    
+        {% endif %}
+    </div>
+{% endblock %}
