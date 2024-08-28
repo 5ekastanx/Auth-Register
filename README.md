@@ -18,26 +18,13 @@ Welcome to Auth-Register, a Django-based authentication and registration system.
     cd Auth-Register
     ```
 
-2. **Create a Virtual Environment:**
-
-    ```bash
-    python3 -m venv env
-    source env/bin/activate  # On Windows use `env\Scripts\activate`
-    ```
-
-3. **Install Dependencies:**
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. **Apply Migrations:**
+3. **Apply Migrations:**
 
     ```bash
     python manage.py migrate
     ```
 
-5. **Run the Server:**
+4. **Run the Server:**
 
     ```bash
     python manage.py runserver
